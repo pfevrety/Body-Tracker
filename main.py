@@ -13,7 +13,7 @@ cap = cv2.VideoCapture(0)
 detector = ht.handDetector()
 
 # Check if camera opened successfully
-if cap.isOpened() == False:
+if cap.isOpened() is False:
     print("Error opening video stream or file")
 
 while cap.isOpened():
